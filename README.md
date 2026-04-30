@@ -24,71 +24,31 @@ Test the C Program for the desired output.
 # PROGRAM:
 
 ## C Program to create new process using Linux API system calls fork() and getpid() , getppid() and to print process ID and parent Process ID using Linux API system calls
+```
+#include <stdio.h>
+#include <stdlib.h>
+#include <unistd.h>
+#include <sys/wait.h>
 
+int main() {
+    int pid = fork();
 
+    if (pid == 0) { 
+        printf("I am child, my PID is %d\n", getpid()); 
+        printf("My parent PID is: %d\n", getppid()); 
+        sleep(2);  // Keep child alive for verification
+    } else { 
+        printf("I am parent, my PID is %d\n", getpid()); 
+        wait(NULL); 
+    }
+}
 
+```
+## OUTPUT
 
+<img width="610" height="652" alt="Screenshot 2026-04-30 110925" src="https://github.com/user-attachments/assets/8ad747aa-1ff1-4beb-9098-171a09e12dca" />
 
-
-
-
-
-
-
-
-
-##OUTPUT
-
-
-
-
-
-
-
-
-## C Program to execute Linux system commands using Linux API system calls exec() , exit() , wait() family
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-##OUTPUT
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+<img width="576" height="139" alt="Screenshot 2026-04-30 111037" src="https://github.com/user-attachments/assets/b1611ec6-7da3-4b34-99e8-2f8108d4d538" />
 
 
 
