@@ -94,6 +94,8 @@ int main() {
 
 ```
 ## output
+<img width="405" height="55" alt="Screenshot 2026-05-01 103603" src="https://github.com/user-attachments/assets/330b7868-0feb-488a-9fb4-e3dd11069b45" />
+<img width="656" height="351" alt="Screenshot 2026-05-01 103616" src="https://github.com/user-attachments/assets/39fc9188-6ffa-4a80-948c-85f5e36a88de" />
 
 
 # RESULT:
